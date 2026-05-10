@@ -34,3 +34,19 @@
 
 # duration = float(duration)
 # sample_rate = int(sample_rate)
+
+# Exercise 02 — User Input Audio Checker
+
+file_name = input("Enter file name: ")
+duration = input("Enter duration: ")
+sample_rate = input("Enter sample rate: ")
+
+duration = float(duration)
+sample_rate = int(sample_rate)
+
+duration_is_valid = duration > 0.3
+sample_rate_is_valid = sample_rate == 48000
+
+print(f"File checked: {file_name}")
+print(f"Duration is valid: {duration_is_valid}")
+print(f"Sample rate is valid: {sample_rate_is_valid}")
