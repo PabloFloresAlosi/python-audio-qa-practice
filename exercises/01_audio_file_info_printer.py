@@ -29,17 +29,21 @@
 
 # Exercise 01 — Audio File Info Printer
 
-language = "EN"
+languague = "EN"
 character = "FA"
 category = "Work"
 line_type = "Q"
 id_number = "003"
 variation = "A"
 duration = 1.42
-sample_rate = 48000
+sample_rate = 48000 
 
-file_name = f"VO_{language}_{character}_{category}_{line_type}_{id_number}_{variation}.wav"
+file_name = "VO_" + languague + "_" + character + "_" + category + "_" + line_type + "_" + id_number + "_" + variation + ".wav"
+file_alternative = f"VO_{languague}_{character}_{category}_{line_type}_{id_number}_{variation}.wav"
 
-print(f"File: {file_name}")
-print(f"Duration: {duration} seconds")
-print(f"Sample rate: {sample_rate} Hz")
+print("File: " + file_name)
+print("Duration: " + str(duration) + " seconds")
+print("Sample rate: " + str(sample_rate) + " Hz")
+print(f"File Alternative: {file_alternative}")
+print(f"Duration Alternative: {duration} seconds")
+print(f"Sample rate Alternative: {sample_rate} Hz")
